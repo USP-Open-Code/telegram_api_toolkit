@@ -1,0 +1,107 @@
+src/admin/
+requirements.txt
+test.py
+start.sh
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Celery beat schedule files
+celerybeat-schedule
+
+# dotenv
+.env
+.env.*
+
+# Testing
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage/
+.tox/
+.cache/
+pytest_cache/
+junit-*.xml
+
+# Sphinx documentation
+docs/_build/
+
+# Pylint
+pylint.log
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Environments
+*.env
+*.venv
+*.virtualenv
+.pyenv
+.pyre/
+.spyderproject
+.spyproject
+
+# pyright
+pyrightconfig.json
+
+# Local IDE settings
+*.sublime-workspace
