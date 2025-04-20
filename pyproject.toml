@@ -6,9 +6,12 @@ authors = ["Gustavo Mendonça Ortega <gustavo_ortega@usp.br>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 pyTelegramBotAPI = "^4.10.0"
 requests = "^2.28.2"
+pydantic-settings = "^2.9.1"
+httpx = "^0.28.1"
+aiohttp = "^3.11.17"
 
 [tool.poetry.dev-dependencies]
 
