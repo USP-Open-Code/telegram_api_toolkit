@@ -1,7 +1,7 @@
 from telebot.async_telebot import AsyncTeleBot
 from telebot.types import Message
 
-from src.handlers.utils import new_chat_keyboard, request_llm
+from .utils import new_chat_keyboard, request_llm
 
 
 async def welcome_message(message: Message, bot: AsyncTeleBot):
@@ -15,8 +15,8 @@ async def welcome_message(message: Message, bot: AsyncTeleBot):
         bot (AsyncTeleBot): Instância do bot do TeleBot
 
     """
-    keyboard = new_chat_keyboard()
-    await bot.send_message(message.chat.id, reply_markup=keyboard())
+    keyboard = await new_chat_keyboard()
+    await bot.send_message(message.chat.id, reply_markup=keyboard)
 
 
 async def reply_message(message: Message, bot: AsyncTeleBot) -> None:

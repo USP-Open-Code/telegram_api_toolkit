@@ -39,9 +39,9 @@ async def request_llm(message: str, user_id: str) -> str:
     url = settings.RESPONSE_ENDPOINT
     payload = {
         "message": message,
-        "user_id": user_id
+        "user_id": str(user_id)
     }
 
     async with httpx.AsyncClient() as client:
-        response = await client.post(url, json=payload)
+        response = await client.post(url, json=payload, timeout=360)
         return response.json().get("response")
